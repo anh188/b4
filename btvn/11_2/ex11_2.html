@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/b4/btvn/11_2/ex11_2.css">
+    <title>Adjust Font Size</title>
+</head>
+<body>
+    <div class="button-container">
+        <p>Cỡ chữ</p>
+        <button onclick="setDefaultFontSize()">Mặc Định</button>
+        <button onclick="fontSize('increase')">Chữ lớn</button>
+        <button onclick="fontSize('decrease')">Chữ nhỏ</button>
+    </div>
+<div id="content">
+    <p id="text">Khi người dùng nhấp chuột vào nút Lớn hoặc Nhỏ sẽ tăng hoặc giảm cỡ chữ trên hình vẽ. Cuối cùng họ cũng có thể nhấn vào nút Mặc Định để trả cỡ chữ về giá trị ban đầu. Chúng ta sẽ cho phép người dùng nhấp chuột nhiều lần vào nút, và mỗi lần nhấp cỡ chữ sẽ tăng hoặc giảm dần lên. Ta sẽ cho tăng cỡ chữ lên 40% mỗi khi người dùng nhấp chuột vào nút “Lớn” hoặc nhỏ đi 40% mỗi khi nhấp chuột vào nút “Nhỏ”.</p>
+</div>
+
+
+
+<script>
+    let size = 16;
+
+    function fontSize(action) {
+        const textElement = document.getElementById('text');
+
+        if (action === 'increase') {
+            size *= 1.4;
+        } else if (action === 'decrease') {
+            size *= 0.6;
+        }
+
+        textElement.style.fontSize = size + 'px';
+    }
+
+    function setDefaultFontSize() {
+        const textElement = document.getElementById('text');
+        size = 16;
+        textElement.style.fontSize = size + 'px';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let N, M, K;
+
+        // Sử dụng vòng lặp while để đảm bảo điều kiện N <= M
+            while (true) {
+                M = prompt("Nhập vào số M:");
+                N = prompt("Nhập vào số N:");
+                K = prompt("Nhập vào số K:");
+
+                M = parseInt(M);
+                N = parseInt(N);
+                K = parseInt(K);
+
+                if (N <= M) {
+                    break; 
+                } else {
+                    alert("Nhập không hợp lệ. Vui lòng nhập lại.");
+                }
+            }
+
+        let sum = 0;
+
+        for (let i = N; i <= M; i++) {
+            if (i % K === 0) {
+                sum += i;
+            }
+        }
+
+        // console.log(`Tổng các số chia hết cho ${K} trong khoảng từ ${N} đến ${M} là: ${sum}`);
+        alert(`Tổng các số chia hết cho ${K} trong khoảng từ ${N} đến ${M} là: ${sum}`);
+
+    </script>
+</body>
+</html>

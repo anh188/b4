@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ex.css">
+    <title>Validate Javascript</title>
+</head>
+
+<body>
+    <div class="register-form">
+        <h2>ĐĂNG KÝ</h2>
+        <div class="input-row">
+            <label for="">Họ và tên</label>
+            <input type="text" placeholder="Nhập họ tên..." id="username" autocomplete="off" />
+            <small>Error message</small>
+        </div>
+        <div class="male">
+            <label for="">Giới tính</label>
+            <input class="malee" type="radio" id="male" name="gender" value="male">
+            <label for="male">Nam</label>     
+            <input class="malee" type="radio" id="female" name="gender" value="female">
+            <label for="female">Nữ</label>
+        </div>
+        <div class="input-row">
+            <label for="">Email</label>
+            <input type="Email" placeholder="Nhập email..." id="email" autocomplete="off" />
+            <small>Error message</small>
+        </div>
+        <div class="input-row">
+            <label for="">Số điện thoại</label>
+            <input type="text" placeholder="Nhập số điện thoại..." id="phone" autocomplete="off"/>
+            <small>Error message</small>
+        </div>
+
+        <div class="input-row">
+            <label for="">Mật khẩu</label>
+            <input type="password" name="" id="password" placeholder="" autocomplete="off">
+            <small style="bottom: -35px;">Yêu cầu nhập mật khẩu</small>     
+        </div>
+        <div class="input-row">
+            <label for="">Xác nhận mật khẩu</label>
+            <input type="password" name="" id="cpassword" placeholder="" autocomplete="off">
+            <small>Yêu cầu xác nhận mật khẩu</small>
+        </div>
+        
+        <div class="input-row">
+            <div class="btn-control">
+            <button class="btn" id="btn-register">
+                ĐĂNG KÝ
+            </button>
+            <button class="btn" onclick="clearText()">Clear Text</button>  
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./ex.js"></script>
+
+</html>

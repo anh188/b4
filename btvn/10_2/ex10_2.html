@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Nhập vào số nguyên n:");
+            n = parseInt(n);
+
+            let sum = 0;
+            let i = 1;
+
+            do {
+                sum += i;
+                i++;
+            } while (i <= n);
+
+            // console.log(`Tổng S = 1 + 2 + 3 + ... + ${n} là: ${sum}`);
+            alert(`Tổng S = 1 + 2 + 3 + ... + ${n} là: ${sum}`);
+    </script>
+</body>
+</html>

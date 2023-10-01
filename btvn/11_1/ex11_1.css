@@ -1,0 +1,32 @@
+table {
+    /* border-collapse: collapse; */
+    width: 60%;
+    text-align: center;
+    border-spacing: 10px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+td:hover {
+    background-color: #72bffe; /* Màu nền khi hover */
+}
+
+#checkAll, #uncheckAll {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #e99f3b;
+    color: #000;
+    border-top: #000;
+    border-left: #000;
+    width: 100px;
+}
+
+table td{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Đổ bóng bottom-right */
+    
+}
+th,td{
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/b4/btvn/11_1/ex11_1.css">
+    <title>Checkbox</title>
+</head>
+<style>
+    table {
+            border-spacing: 30px;
+    }
+</style>
+<body>
+    <table align="center">
+            <tr>
+                <th>Học lập trình tại Zent Coding School</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Est, distinctio!</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Est, distinctio!</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Est, distinctio!</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Est, distinctio!</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Est, distinctio!</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Est, distinctio!</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Est, distinctio!</td>
+            </tr>
+            <tr>
+                <th>
+                <button id="checkAll" onclick="checkAll()">Check All</button>
+                <button id="uncheckAll" onclick="uncheckAll()">Uncheck All</button> 
+            </th>
+            </tr>
+    </table>
+
+<script>
+    function checkAll() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => checkbox.checked = true);
+    }
+
+    function uncheckAll() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => checkbox.checked = false);
+    }
+</script>
+
+</body>
+</html>
